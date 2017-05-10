@@ -1,12 +1,12 @@
 ---
-title: Pitor Toolbox使用（未完成）
+title: Pitor Toolbox使用学习（未完成）
 tags: matlab工具包，soft-cascade，adaboost，acf特征
 grammar_cjkRuby: true
 ---
 
 工具包的组成结构：
 ![enter description here][1]
-项目中主要直接调用detector中的函数：acfTrain训练模型->acfDetect使用训练出的detector检测—>acfModify可修改detector参数->acfTest测试分类效果（还没太搞懂怎么用）
+项目中主要直接调用detector中的函数：acfTrain训练模型->acfDetect使用训练出的detector检测—>acfModify可修改detector参数->acfTest测试分类效果
 
 ### 1. 安装、跑示例
 这部分参考博客http://blog.csdn.net/ddreaming/article/details/52334913

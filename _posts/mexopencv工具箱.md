@@ -11,6 +11,7 @@ for opencv3.1：https://github.com/kyamagu/mexopencv （master的是最新版本
 ![enter description here][1]
 注意，第一个参数为字符串‘opencv_path’,第二个参数为include文件所在路径。
 
+编译好的.M文件在‘+cv’文件夹
 欢迎使用 **{小书匠}(xiaoshujiang)编辑器**，您可以通过==设置==里的修改模板来改变新建文章的内容。
 
 

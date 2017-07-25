@@ -19,7 +19,8 @@ grammar_cjkRuby: true
 -- checking for module 'csm'
 --   package 'csm' not found
 
-dpkg -l 显示软件包列表 状态标志： 
+dpkg -l 显示软件包列表 111
+状态标志： 
 iU 表示软件包未安装成功
 ii 表示安装成功
 rc 表示软件包已经被卸载,但配置文件仍在
@@ -32,6 +33,30 @@ ii  openni-utils                                          1.5.4.0-7             
 
 
 ![apt-get方式下载安装][1]
+
+
+3. g2o2ros输出map属性更改：
+
+> size = Eigen::Vector2i((boundingBox(0, 1) - boundingBox(0, 0))/ resolution,
+(boundingBox(1, 1) - boundingBox(1, 0))/ resolution);
+
+map大小由boundingBox大小和resolution决定。
+更改代码：
+
+``` stylus
+
+  boundingBox(0,0)=xmin;
+  boundingBox(0,1)=xmax;
+  boundingBox(1,0)=ymin;
+  boundingBox(1,1)=ymax;
+
+  //boundingBox(0,0)=-250;
+  //boundingBox(0,1)=250;
+  //boundingBox(1,0)=-250;
+  //boundingBox(1,1)=250;
+```
+
+
 欢迎使用 **{小书匠}(xiaoshujiang)编辑器**，您可以通过==设置==里的修改模板来改变新建文章的内容。
 
 

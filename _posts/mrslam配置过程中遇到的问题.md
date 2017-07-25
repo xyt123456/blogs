@@ -56,6 +56,14 @@ map大小由boundingBox大小和resolution决定。
   //boundingBox(1,1)=250;
 ```
 
+4. 编译工作区内某个功能包
+
+``` stylus
+catkin_make -DCATKIN_WHITE_PACKAGES="pkg1;pkg2"
+#取消设置
+#catkin_make -DCATKIN_WHITE_PACKAGES=""
+```
+cartographer中用google的nijja编译，貌似代码修改后再次编译速度比catkin_make快很多
 
 欢迎使用 **{小书匠}(xiaoshujiang)编辑器**，您可以通过==设置==里的修改模板来改变新建文章的内容。
 

@@ -3,10 +3,10 @@ title: mrslam配置过程中遇到的问题
 tags: 新建,模板,小书匠
 grammar_cjkRuby: true
 ---
-1. g2o库编译错误，提示找不到g2o/config.h文件
+* **g2o库编译错误，提示找不到g2o/config.h文件**
   -解决办法：build/g2o下找到config.h文件，复制到src/g2o目录下
 
-2. 
+* **laser_scan_matcher模块编译问题**
 
 > -- ==> add_subdirectory(laser_scan_matcher)
 -- Using these message generators: gencpp;genlisp;genpy
@@ -35,7 +35,7 @@ ii  openni-utils                                          1.5.4.0-7             
 ![apt-get方式下载安装][1]
 
 
-3. g2o2ros输出map属性更改：
+* **g2o2ros输出map属性更改**：
 
 > size = Eigen::Vector2i((boundingBox(0, 1) - boundingBox(0, 0))/ resolution,
 (boundingBox(1, 1) - boundingBox(1, 0))/ resolution);
@@ -55,8 +55,10 @@ map大小由boundingBox大小和resolution决定。
   //boundingBox(1,0)=-250;
   //boundingBox(1,1)=250;
 ```
+xmin和xmax为有效雷达测距点范围。
 
-4. 编译工作区内某个功能包
+
+* **编译工作区内某个功能包**
 
 ``` stylus
 catkin_make -DCATKIN_WHITE_PACKAGES="pkg1;pkg2"
